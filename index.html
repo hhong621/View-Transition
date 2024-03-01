@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <aside id="js-overlay" class="overlay">
+        <div id="js-overlay-target" class="overlay__inner"></div>
+    </aside>
+      
+    <div class="header">
+        <h1>View Transition Tutorial</h1>
+        <p>Click on an image to see it transition to overlay using the new View Transition API. Currently only available in Chrome.</p>
+    </div>
+
+    <main>
+        <figure onclick="toggleImageView(1)" style="--color: #ffffff">
+            <div>
+            <img id="js-gallery-image-1" class="gallery__image" src="images/artists-eyes-5I79qpuK38g-unsplash.jpg" alt="People skiing on a mountain" />
+            </div>
+            <figcaption>Skiing</figcaption>
+        </figure>
+        
+        <figure onclick="toggleImageView(2)" style="--color: #ffffff">
+            <div>
+            <img id="js-gallery-image-2" class="gallery__image" src="images/expanalog-kIS_IKtvLz0-unsplash.jpg" alt="View of a person's shoes while standing on rocks" />
+            </div>
+            <figcaption>Shoes</figcaption>
+        </figure>
+
+        <figure onclick="toggleImageView(3)" style="--color: #ffffff">
+            <div>
+            <img id="js-gallery-image-3" class="gallery__image" src="images/illia-horokhovsky-fxJnHxUfT2E-unsplash.jpg" alt="The top of a building against a blue sky" />
+            </div>
+            <figcaption>Building</figcaption>
+        </figure>
+
+        <figure onclick="toggleImageView(4)" style="--color: #ffffff">
+            <div>
+            <img id="js-gallery-image-4" class="gallery__image" src="images/samura-silva-d8MM1gQcTn0-unsplash.jpg" alt="Cats relaxing on a bench with quilts" />
+            </div>
+            <figcaption>Cats</figcaption>
+        </figure>
+
+        <figure onclick="toggleImageView(5)" style="--color: #ffffff">
+            <div>
+            <img id="js-gallery-image-5" class="gallery__image" src="images/samura-silva-pXsZBWKDDlg-unsplash.jpg" alt="Cafe table with a camera, coffee, flowers in a vase, and pastry" />
+            </div>
+            <figcaption>Cafe</figcaption>
+        </figure>
+
+        <figure onclick="toggleImageView(6)" style="--color: #ffffff">
+            <div>
+            <img id="js-gallery-image-6" class="gallery__image" src="images/sydney-moore-d8z3ptedXOw-unsplash.jpg" alt="Big brown dog looks away from the camera as sun hits its face" />
+            </div>
+            <figcaption>Dog</figcaption>
+        </figure>
+    </main>     
+    
+    <aside style="display: none" id="js-banner" class="banner">
+        <div class="banner__inner">
+          This browser currently doesn't support View Transitions API. Use Chrome 111 or newer version to view the
+          example.
+        </div>
+    </aside>
+
+    <script src="index.js"></script>
+</body>
+</html>
